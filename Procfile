@@ -1,1 +1,1 @@
-web: java -jar target/java-todo.jar
+web: ./build/install/todo/bin/todo

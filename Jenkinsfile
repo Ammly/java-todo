@@ -4,6 +4,11 @@ pipeline {
     gradle 'Gradle-6'
   }
   stages {
+    stage('clone repository') {
+        steps{
+            git 'https://github.com/Ammly/java-todo'
+        }
+    }
     stage('Build') {
       steps {
         sh 'gradle build'
