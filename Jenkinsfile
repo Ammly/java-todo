@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('clone repository') {
         steps{
-            git 'https://github.com/Ammly/java-todo'
+            git 'https://github.com/Ammly/java-todo.git'
         }
     }
     stage('Build') {
